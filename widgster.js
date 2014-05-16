@@ -100,12 +100,6 @@
     };
 
     Widgster.prototype.close = function(){
-        //could have been remove.widgster, but http://bugs.jquery.com/ticket/14600
-        var e = $.Event('close.widgster');
-
-        this.$element.trigger(e);
-
-        if (e.isDefaultPrevented()) return;
 
         this.options.closePrompt && this.options.closePrompt($.proxy(this._doClose, this));
 
@@ -204,10 +198,16 @@
     };
 
     Widgster.prototype._doClose = function(){
+        //could have been remove.widgster, but http://bugs.jquery.com/ticket/14600
+        var e = $.Event('close.widgster');
+
+        this.$element.trigger(e);
+
+        if (e.isDefaultPrevented()) return;
 
         this.$element.detach();
 
-        var e = $.Event('closed.widgster', {$element: this.$element});
+        e = $.Event('closed.widgster', {$element: this.$element});
 
         this.$element.trigger(e);
     };
