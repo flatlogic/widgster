@@ -3,9 +3,9 @@ Widgster
 
 Small jQuery plugin that provides an easy way to handle basic widget functions like collapsing, closing, ajax-refreshing & fullsreening.
 
-**[Demo](#)**
+**[Demo](http://widgster.flatlogic.com/demo/index.html)**
 
-**[Advanced 3rd party Demo](http://demo.flatlogic.com/2.1/grid_live.html)**
+**[Advanced Demo](http://demo.flatlogic.com/2.1/grid_live.html)**
 
 Use
 ------------
