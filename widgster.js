@@ -205,6 +205,8 @@
 
         if (e.isDefaultPrevented()) return;
 
+        $('body').css('overflow', '');
+
         this.$element.detach();
 
         e = $.Event('closed.widgster', {$element: this.$element});
