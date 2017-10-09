@@ -5,7 +5,7 @@ Small jQuery plugin that provides an easy way to handle basic widget functions l
 
 **[Demo](http://widgster.flatlogic.com/demo/index.html)**
 
-**[Advanced Demo](http://demo.flatlogic.com/sing-wrapbootstrap-2/ajax/grid.html)**
+**[Advanced Demo](http://demo.flatlogic.com/3.9.0/dark/grid_live.html)**
 
 Use
 ------------

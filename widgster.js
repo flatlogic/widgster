@@ -1,11 +1,19 @@
 /**
  * Widgster plugin.
  */
-!function ($) {
-
+( function( global, factory ) {
     "use strict";
 
-    // WIDGSTER CLASS DEFINITION
+    if ( typeof module === "object"
+        && typeof module.exports === "object"
+        || !global.document
+        || !global.jQuery) {
+        console.warn( "Widgster must be executed in a browser environment with jQuery defined" );
+    } else {
+        factory( global.jQuery );
+    }
+} )( typeof window !== "undefined" ? window : this, function( $ ) {
+        // WIDGSTER CLASS DEFINITION
     // ======================
 
     var Widgster = function (el, options) {
@@ -286,6 +294,4 @@
     };
 
     $.fn.widgster.Constructor = Widgster;
-
-
-}(window.jQuery);
+});

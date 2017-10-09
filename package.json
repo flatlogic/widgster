@@ -1,0 +1,23 @@
+{
+  "name": "widgster",
+  "version": "1.0.0",
+  "description": "jQuery plugin that provides an easy way to handle basic widget functions like collapsing, closing, ajax-refreshing & fullsreening",
+  "main": "widgster.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flatlogic/widgster.git"
+  },
+  "keywords": [
+    "jquery",
+    "widget"
+  ],
+  "author": "https://flatlogic.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flatlogic/widgster/issues"
+  },
+  "homepage": "https://github.com/flatlogic/widgster#readme"
+}
