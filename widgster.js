@@ -4,16 +4,13 @@
 ( function( global, factory ) {
     "use strict";
 
-    if ( typeof module === "object"
-        && typeof module.exports === "object"
-        || !global.document
-        || !global.jQuery) {
-        console.warn( "Widgster must be executed in a browser environment with jQuery defined" );
+    if (global.jQuery && global.jQuery.fn) {
+        factory(global.jQuery);
     } else {
-        factory( global.jQuery );
+        console.warn("Widgster must be executed in a browser environment with jQuery defined");
     }
 } )( typeof window !== "undefined" ? window : this, function( $ ) {
-        // WIDGSTER CLASS DEFINITION
+    // WIDGSTER CLASS DEFINITION
     // ======================
 
     var Widgster = function (el, options) {
