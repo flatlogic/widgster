@@ -81,3 +81,10 @@ For example, to make refresh button spin:
     }).on("loaded.widgster", function(){
         $(this).find('[data-widgster="load"] > i').removeClass('fa-spin')
     });
+
+How can I support the developers?
+------------------------------------
+- Star our GitHub repo :star:
+- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
+- Follow us on [Twitter](https://twitter.com/flatlogic) :feet:
+- Like our page on [Facebook](https://www.facebook.com/flatlogic/) :thumbsup:
